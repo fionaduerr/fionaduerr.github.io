@@ -51,3 +51,10 @@ if ($('.back-to-top').length) {
   
 });
 
+$(document).ready(function () {
+    var $container = $("#container");
+
+    $container.imagesLoaded(function () {
+        $container.masonry();
+    });
+});
