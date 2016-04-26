@@ -96,6 +96,8 @@ body {
 	margin-bottom: 20px;
 	display: inline-block;
 	position: relative;
+	transition: all .2s ease-in-out;
+
 	}
 
 .grid-item--width2 { width: 350px; }
@@ -293,6 +295,9 @@ span.text-content span {
 .grid-item:hover span.text-content {
   opacity: 1;
 }
+
+
+.grid-item:hover { transform: scale(1.1); }
 
 .me {
 	margin-top: 30px;
