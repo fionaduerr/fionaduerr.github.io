@@ -48,5 +48,21 @@ if ($('.back-to-top').length) {
         }, 700);
     });
 }
+  $('.grid-item').click( function() {
+    var $items = getItems();
+    // hide by default
+    $items.hide();
+    // append to container
+    $container.append( $items );
+    $items.imagesLoaded().progress( function( imgLoad, image ) {
+      // get item
+      // image is imagesLoaded class, not <img>, <img> is image.img
+      var $item = $( image.img ).parents('.item');
+      // un-hide item
+      $item.show();
+      // masonry does its thing
+      $container.masonry( 'appended', $item );
+    });
+  });
   
 });
