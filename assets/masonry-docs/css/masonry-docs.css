@@ -1232,6 +1232,7 @@ two columns for large devices
 .grid {
   background: white;
   border-radius: 5px;
+  height: 100%;
 }
 
 /* clearfix */
