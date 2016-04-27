@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 $('.grid').masonry({
-  // optionss
+  // optionssd
   itemSelector: '.grid-item',
   columnWidth: 200,
 
