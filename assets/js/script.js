@@ -1,11 +1,14 @@
 $(document).ready(function() {
 
-$('.grid').masonry({
-  // optionssd
-  itemSelector: '.grid-item',
-  columnWidth: 200,
+$('.grid').imagesLoaded(function(){
 
-});
+    $('.grid').masonry({
+      // optionssd
+      itemSelector: '.grid-item',
+      columnWidth: 200,
+
+    }); 
+  });
 
 $('a').click(function(){
   $('html, body').animate({
